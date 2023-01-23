@@ -1,12 +1,627 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-  <head>
-    <title>Alcoholic Alchemists</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  
-  <body>
-  </body>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>2nd Annual Delish Beerfest | Home</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Load external javascript -->
+        <script src="myscripts.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <section class = "navigation">
+            <img src="img/delishlogo.png"/>
+            <div class ="navbar">
+                <ul>
+                    <li><a href ="index.html">Home</a></li>
+                    <li><a href="presentation.html">Present</a></li>
+                    <li><a href="scoreboard.html">Scores</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Beer Choices -->
+        <section class = "flex beers">
+            <h1>Beer Selection</h1>
+            <div class="selection">
+                <div class ="beerbox" id="box1">
+                    <img id = "beerpic1">
+                    <div class = "beerdetails">
+                        <p>#1</p>
+                        <p id="brewery1">Brewery</p>
+                        <p id="beername1">Beer Name</p>
+                        <p id="beertype1">Beer Type</p>
+                        <button onclick="beerSelected(1,1)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box2">
+                    <img id = "beerpic2">
+                    <div class = "beerdetails">
+                        <p>#2</p>
+                        <p id ="brewery2">Brewery</p>
+                        <p id="beername2">Beer Name</p>
+                        <p id="beertype2">Beer Type</p>
+                        <button onclick="beerSelected(2)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box3">
+                    <img id = "beerpic3">
+                    <div class = "beerdetails">
+                        <p>#3</p>
+                        <p id ="brewery3">Brewery</p>
+                        <p id="beername3">Beer Name</p>
+                        <p id="beertype3">Beer Type</p>
+                        <button onclick="beerSelected(3)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box4">
+                    <img id = "beerpic4">
+                    <div class = "beerdetails">
+                        <p>#4</p>
+                        <p id ="brewery4">Brewery</p>
+                        <p id="beername4">Beer Name</p>
+                        <p id="beertype4">Beer Type</p>
+                        <button onclick="beerSelected(4)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box5">
+                    <img id = "beerpic5">
+                    <div class = "beerdetails">
+                        <p>#5</p>
+                        <p id ="brewery5">Brewery</p>
+                        <p id="beername5">Beer Name</p>
+                        <p id="beertype5">Beer Type</p>
+                        <button onclick="beerSelected(5)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box6">
+                    <img id = "beerpic6">
+                    <div class = "beerdetails">
+                        <p>#6</p>
+                        <p id ="brewery6">Brewery</p>
+                        <p id="beername6">Beer Name</p>
+                        <p id="beertype6">Beer Type</p>
+                        <button onclick="beerSelected(6)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box7">
+                    <img id = "beerpic7">
+                    <div class = "beerdetails">
+                        <p>#7</p>
+                        <p id ="brewery7">Brewery</p>
+                        <p id="beername7">Beer Name</p>
+                        <p id="beertype7">Beer Type</p>
+                        <button onclick="beerSelected(7)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box8">
+                    <img id = "beerpic8">
+                    <div class = "beerdetails">
+                        <p>#8</p>
+                        <p id ="brewery8">Brewery</p>
+                        <p id="beername8">Beer Name</p>
+                        <p id="beertype8">Beer Type</p>
+                        <button onclick="beerSelected(8)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box9">
+                    <img id = "beerpic9">
+                    <div class = "beerdetails">
+                        <p>#9</p>
+                        <p id ="brewery9">Brewery</p>
+                        <p id="beername9">Beer Name</p>
+                        <p id="beertype9">Beer Type</p>
+                        <button onclick="beerSelected(9)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box10">
+                    <img id = "beerpic10">
+                    <div class = "beerdetails">
+                        <p>#10</p>
+                        <p id ="brewery10">Brewery</p>
+                        <p id="beername10">Beer Name</p>
+                        <p id="beertype10">Beer Type</p>
+                        <button onclick="beerSelected(10)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box11">
+                    <img id = "beerpic11">
+                    <div class = "beerdetails">
+                        <p>#11</p>
+                        <p id ="brewery11">Brewery</p>
+                        <p id="beername11">Beer Name</p>
+                        <p id="beertype11">Beer Type</p>
+                        <button onclick="beerSelected(11)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box12">
+                    <img id = "beerpic12">
+                    <div class = "beerdetails">
+                        <p>#12</p>
+                        <p id ="brewery12">Brewery</p>
+                        <p id="beername12">Beer Name</p>
+                        <p id="beertype12">Beer Type</p>
+                        <button onclick="beerSelected(12)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box13">
+                    <img id = "beerpic13">
+                    <div class = "beerdetails">
+                        <p>#13</p>
+                        <p id ="brewery13">Brewery</p>
+                        <p id="beername13">Beer Name</p>
+                        <p id="beertype13">Beer Type</p>
+                        <button onclick="beerSelected(13)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box14">
+                    <img id = "beerpic14">
+                    <div class = "beerdetails">
+                        <p>#14</p>
+                        <p id ="brewery14">Brewery</p>
+                        <p id="beername14">Beer Name</p>
+                        <p id="beertype14">Beer Type</p>
+                        <button onclick="beerSelected(14)">Select</button>
+                    </div>
+                </div>
+                <div class ="beerbox" id="box15">
+                    <img id = "beerpic15">
+                    <div class = "beerdetails">
+                        <p>#15</p>
+                        <p id ="brewery15">Brewery</p>
+                        <p id="beername15">Beer Name</p>
+                        <p id="beertype15">Beer Type</p>
+                        <button onclick="beerSelected(15)">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="loadBeers()">Load Beers</button>
+
+        </section>
+
+        <section class = "flex">
+            <div class ="playerorder">
+                <h1>Presentation order:</h1> 
+                <p id="presorder"></p>
+                <button onclick="shufflePlayers();" id="shuffle">Choose Player Order</button>
+            </div>
+            <div class ="presentation" id="pres1">
+                <h2 id="presenter">First Presentation</h2>
+                <div class = "presenting">
+                    <img id="beerpresenting" src="">
+                    <div class = "infopresenting">
+                        <p id="numberpresent">Num</p>
+                        <p id="brewerypresent">Brewery</p>
+                        <p id="namepresent">Beer name</p>
+                        <p id="typepresent">Beer Type</p>
+                    </div>
+                </div>
+                <div class="otherscores">
+                    <div class ="indchoices">
+                        <p id ="p1">Player:</p>
+                        <input type="text" id="p1choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p2">Player:</p>
+                        <input type="text" id="p2choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p3">Player:</p>
+                        <input type="text" id="p3choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p4">Player:</p>
+                        <input type="text" id="p4choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p5">Player:</p>
+                        <input type="text" id="p5choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p6">Player:</p>
+                        <input type="text" id="p6choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p7">Player:</p>
+                        <input type="text" id="p7choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p8">Player:</p>
+                        <input type="text" id="p8choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p9">Player:</p>
+                        <input type="text" id="p9choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p10">Player:</p>
+                        <input type="text" id="p10choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p11">Player:</p>
+                        <input type="text" id="p11choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p12">Player:</p>
+                        <input type="text" id="p12choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p13">Player:</p>
+                        <input type="text" id="p13choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p14">Player:</p>
+                        <input type="text" id="p14choice" value="0">
+                    </div>
+                    <div class ="indchoices">
+                        <p id ="p15">Player:</p>
+                        <input type="text" id="p15choice" value="0">
+                    </div>
+                </div>
+                <p id ="testing">test</p>
+                <button onclick ="submit();" id="submission">Submit Guesses</button>
+            </div>
+        </section>
+
+        <section class = "scores">
+            <h1>Scoring:</h1>
+            <table id="scoretable">
+                <tr>
+                    <th>Round #</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Player</th>
+                    <th>Actual</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><input type="text" id="p1actual" value="0"></td>
+                  <td><button onclick="rowScore(1);">Score</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p2actual" value="0"></td>
+                    <td><button onclick="rowScore(2);">Score</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p3actual" value="0"></td>
+                    <td><button onclick="rowScore(3);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p4actual" value="0"></td>
+                    <td><button onclick="rowScore(4);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p5actual" value="0"></td>
+                    <td><button onclick="rowScore(5);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p6actual" value="0"></td>
+                    <td><button onclick="rowScore(6);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p7actual" value="0"></td>
+                    <td><button onclick="rowScore(7);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p8actual" value="0"></td>
+                    <td><button onclick="rowScore(8);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p9actual" value="0"></td>
+                    <td><button onclick="rowScore(9);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p10actual" value="0"></td>
+                    <td><button onclick="rowScore(10);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p11actual" value="0"></td>
+                    <td><button onclick="rowScore(11);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p12actual" value="0"></td>
+                    <td><button onclick="rowScore(12);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p13actual" value="0"></td>
+                    <td><button onclick="rowScore(13);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p14actual" value="0"></td>
+                    <td><button onclick="rowScore(14);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p15actual" value="0"></td>
+                    <td><button onclick="rowScore(15);">Score</button></td>
+                  </tr>
+                  <tr>
+                    <td>TOTAL</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="p15actual" value="0"></td>
+                    <td><button onclick="totalScore();">TOTAL SCORES</button></td>
+                  </tr>
+              </table>
+              
+        </section>
+
+        <section class="footer">
+            <p>© 2023 - DELISH - All rights reserved</p>
+        </section>
+
+    </body>
+
 </html>
