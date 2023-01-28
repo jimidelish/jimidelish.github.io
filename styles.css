@@ -130,11 +130,14 @@ h2 {
     justify-content: space-around;
 }
 
-.beerdetails p {
-    color:rgb(11, 11, 80);
+.selection .beerdetails p {
+    color:rgb(46, 46, 94);
+    font-weight: bold;
     overflow-wrap:break-word;
     font-size:larger;
     padding: 0.3rem;
+    border-bottom: 1px dotted black;
+    margin-right:2rem;
 }
 
 /* Presentations */
@@ -185,6 +188,7 @@ h2 {
 
 .infopresenting p {
     font-size: larger;
+    border-bottom: 1px dotted white;
 }
 
 .otherscores {
