@@ -176,10 +176,15 @@ function rowScore(x){
             else {
                 document.getElementById("scoretable").rows[x].cells.item(i).style=("background-color:red;");
             }
-        }       
-        document.getElementById("scoretable").rows[x].cells.item(i).innerHTML="+" + counter;
+        }
+        if (x != i){
+            let phrase = document.getElementById("scoretable").rows[x].cells.item(i).innerHTML;
+        document.getElementById("scoretable").rows[x].cells.item(i).innerHTML= phrase + "<br><br> +" + counter;
+        }
+        
     }
-    document.getElementById("scoretable").rows[x].cells.item(x).innerHTML = "+" + presenterscore;
+    let phrase = document.getElementById("scoretable").rows[x].cells.item(x).innerHTML;
+    document.getElementById("scoretable").rows[x].cells.item(x).innerHTML = phrase + "<br><br> +" + presenterscore;
 }
 
 function totalScore() {
