@@ -32,9 +32,9 @@ let beerList = [
     /*10*/{brewery: "Parallel 49 Brewing",beername: "Peach Bod",beertype: "Sparkling Peach Ale"},
     /*11*/{brewery: "Wychwood Brewery",beername: "Hobgoblin Ruby Beer",beertype: "English Bitter"},
     /*12*/{brewery: "Fernie Brewing Co.",beername: "Ghostrider",beertype: "Pumpkin Brown Ale"},
-    /*13*/{brewery: "brewery",beername: "name",beertype: "type"},
-    /*14*/{brewery: "brewery",beername: "name",beertype: "type"},
-    /*15*/{brewery: "brewery",beername: "name",beertype: "type"}
+    /*13*/{brewery: "Flying Monkeys Craft Brewery",beername: "Space Age Sunshine",beertype: "Orange Creamsicle Quadruple IPA"},
+    /*14*/{brewery: "Tailgunner Brewing Co.",beername: "Bobby Sox",beertype: "Dry-Hopped Sour"},
+    /*15*/{brewery: "Unibroue",beername: "La Fin Du Monde",beertype: "Tripel"}
 ]
 
 let scores = [
